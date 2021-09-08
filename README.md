@@ -1,17 +1,31 @@
 # Markdown
 
-## Objectif
+## Objectif du dépôt.
 
-Dépôt consacré à la création communautaire d'une documentation sur le langage `Markdown`, il démarre du projet d'un ami pour son association, puis je l'ai récupéré avec son accord pour le modifier énormément.
+Ce dépôt a pour but de centraliser les contributions de toutes et tous afin de produire un manuel de référence, pédagogique, formatif et progressif sur le langage `Markdown`.
 
-Cette documentation pour l'heure en français est consacrée au langage `Markdown`, principalement écrite en `Markdown` afin de montrer les possibilités de ce langage de balisage.
+L'objectif initial était de créer une petite documentation rapide pour des collègues de bureau afin qu'ils et elles puissent s'approprier ce langage basique mais relativement puissant pour la prise de notes et la génération de documents simples formatés.
 
-Dans un deuxième temps et en fonction des connaissances de chaque participant et participante, on pourra même envisager de créer des versions en langues étrangères du même guide.
+## Structure du dépôt.
 
-## Exportations
+Pour l'heure le dépôt n'a pas de structure, tout y est mis en vrac.
 
-Utilisant des logiciels simples tels que *mousepad*, *pdflatex* ou encore *pandoc* pour générer le document, j'ai l'intention de pouvoir exporter le dit document en différents formats, de l'article au livre/rapport, en utilisant autant des CSS que des bouts de fichiers en LaTeX.
+## Organisation de la documentation.
 
-## Remerciements anticipés
+Le document principal de la documentation est appelé actuellement `markdown-le-mini-guide.md`.
 
-À chacun et chacune d'entre vous qui se joindra à l'aventure.
+
+
+## Langages utilisés
+
+Dans la mesure du possible, parce que justement l'objectif est de montrer la souplesse et la richesse de ce langage, il est voulu de rédiger le contenu du manuel en `markdown`.
+
+Afin de réaliser un livre à partir du `markdown` j'ai utilisé `pandoc` pour convertir dans cet ordre : `Markdown` &rightarrow; LaTeX &rightarrow; pdf, aussi un fichier ".headers" est inclus afin de modifier certaines entêtes dans le code source en LaTeX et un autre fichier pour être placé dans le corps du document exporté mais avant le code source.
+
+D'autres versions exportations seront possibles.
+
+Dans un premier temps ce manuel se voudra en Français, puis, à l'usage se créeront des sous-répertoires où on pourra imaginer des traductions en langues étrangères.
+
+## Licence.
+
+Ce manuel se voulant universaliste et une base pour les personnes qui le diffuseront, il est placé dans sa conception et son contenu propre sous licence GPL 2.0 pour l'instant.

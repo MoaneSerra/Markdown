@@ -4,24 +4,26 @@
 
 Le Langage `Markdown` est un *langage de balisage léger* c'est-à-dire un langage où est saisi un *code source* composé de texte *brut*, texte pouvant être ouvert avec tout éditeur ou traitement de textes, voire manipulé par des outils syntaxiques ou *parsers* en anglais.
 
-Les caractères saisis sont souvent supportés dans l'un des langages universels en informatique, appelé UTF-8.
+Les caractères saisis sont souvent supportés dans l'un des codages universels en informatique, appelé UTF-8.
+
+Pour les personnes non familières, la notion de *code source* renvoie à la programmation informatique où le programme qui s'exécute[^application] est un fichier binaire contenant des 0 et de 1 incompréhensible pour un humain, et le code source est un texte humainement compréhensible pour les initiés. La notion de code source peut-être associée au découplage introduit dans les années 1960 par **Grace Hopper** qui créa le premier *compilateur*[^compilateur] dont le rôle est de traduire le code source en exécutable binaire.
 
 ## Quel est l'objectif de `Markdown` ?
 
-Le but de ce langage est de faciliter la création de documents simples ou légèrement complexes en simplifiant la vie du créateur de document par une façon simple de saisir ce code source.
+Le but de ce langage est de faciliter la création de documents simples ou légèrement complexes en simplifiant la vie du créateur de document par une façon simple de saisir ce code source. Attention cependant, ce fonctionnement peut être très déroutant si vous pensez à la forme en même temps qu'au fond.
 
-`Markdown` n'est pas un traitement de textes au sens commun du terme. Il ne se comporte pas comme `Word` de *Microsoft*, `Writer` de *Libreoffice* ou encore `Pages` de *Apple*, ce langage ne se comporte pas comme ces traitements de textes classés dans la famille des **wysiwyg**[^wysiwyg] mais plutôt du **wyciwym**[^wyciwym] ; 
-il doit être compris comme un document qui contient des balises sémantiques, c'est-à-dire des marques indiquant le sens du texte écrit.
+`Markdown` n'est pas un traitement de textes au sens actuel communément admis. Il ne se comporte pas comme `Word` de *Microsoft*, `Writer` de *Libreoffice* ou encore `Pages` de *Apple*, ce langage ne se comporte pas comme ces traitements de textes classés dans la famille des **wysiwyg**[^wysiwyg] mais plutôt du **wyciwym**[^wyciwym] ; 
+il doit être compris comme un document qui contient des balises sémantiques, c'est-à-dire des marques indiquant le sens du texte écrit, encadrant ou précédent un bloc ou une ligne de texte.
 
-En découplant l'esthétique du sens, vous pouvez ainsi travailler sur le document plus librement, en réduisant le formatage au plus simple et en se concentrant sur le sens, puis ensuite, créer le document formaté. Ce découplage permet d'ailleurs d'autres aspects environnementaux intéressants, j'y reviendrai ultérieurement.
+En découplant l'esthétique du sens, vous pouvez ainsi travailler sur le document plus librement, vous déchargeant l'esprit, en réduisant le formatage au plus simple et en se concentrant sur le sens, puis ensuite créer le document formaté. Ce découplage permet d'ailleurs d'autres aspects environnementaux intéressants, j'y reviendrai ultérieurement.
 
 L'éditeur spécial markdown utilise un autre outil qu'il intègre de façon transparente pour l'utilisateur, ce que je désignerai par l'expression de *moteur de rendu*.
 
 ## Le matériel nécessaire pour travailler avec `Markdown` ?
 
-Foncièrement, pour éditer du `Markdown` il suffit d'un simple éditeur de textes, puis de l'installation d'un moteur de rendu markdown, il existe pour tout type de plateforme vu l'engouement pour ce langage auprès de nombreux utilisateurs du milieu informatique.
+Foncièrement, pour éditer du `Markdown` il suffit d'un simple éditeur de textes[^editor], puis de l'installation d'un moteur de rendu markdown, il existe pour tout type de plateforme vu l'engouement pour ce langage auprès de nombreux utilisateurs du milieu informatique.
 
-*Petite anecdote* : J'utilise actuellement un simple éditeur de textes
+*Petite anecdote* : J'utilise actuellement un simple éditeur de textes, appelé *mousepad*, qui est très simple dans ses fonctionnalités mais contient exactement celles dont j'ai besoin pour écrire ou programmer.
 
 Il s'est également développé des outils plus complets où via un partage de la fenêtre en deux zones différentes.
 
@@ -57,13 +59,15 @@ Il s'est également développé des outils plus complets où via un partage de l
 
 Les éditeurs de texte permettent de saisir du code, c'est à dire un texte fait de caractères bruts ou codés de façon totalement universelle. Un code écrit avec n'importe quel éditeur peut être ouvert avec n'importe quel autre ou un traitement de textes ...
 
-### Markdown est environnement : un peu de légèreté.
+### Markdown et environnement : un peu de légèreté.
 
-L'informatique est connue pour être un secteur coûteux et *Extrêmement* polluant. Tout le monde n'a pas les moyens de se payer un ordinateur récent et puissant aussi souvent que les programmes les plus *en vogue*, mais nombre d'utilisateurs ont des ordinateurs un peu voire très âgés.
+L'informatique est connue pour être un secteur coûteux et *extrêmement* polluant. Tout le monde n'a pas les moyens de se payer un ordinateur récent et puissant aussi souvent que les programmes les plus *en vogue*, mais nombre d'utilisateurs ont des ordinateurs un peu voire très âgés.
 
-Grâce à ce type d'outil que sont les éditeurs **wyciwym** vous pouvez utiliser un ordinateur même hors d'âge pour composer le contenu ou sa plus grosse partie et compiler ensuite le rendu sur place ou sur un poste un peu plus puissant.
+Grâce à ce type d'outil que sont les éditeurs **wyciwym** vous pouvez utiliser un ordinateur même hors d'âge -- sans exagérer non plus -- pour composer le contenu ou sa plus grosse partie et compiler ensuite le rendu sur place ou sur un poste un peu plus puissant, l'éditeur étant normalement et sauf exception, un programme d'empreinte énergétique faible nécessitant des ressources matérielles modestes.
 
 *Petite anecdote* : Je compose sur une machine de 12 ans d'âge où la seule modification a été d'augmenter la mémoire vive afin qu'il exécute un système récent.
+
+Pour produire ce document, l'éditeur qui est utilisé près de 95 % du temps utilise peu de puissance, lorsque j'ai besoin de voir le rendu, le code source de ce document est alors passé dans une moulinette automatique double qui va le transformer en document tel que vous le lisez. Certaines captures d'écran ultérieures vous montreront des exemples de code source / rendu avec l'un des logiciels que j'utilise.
 
 # Les bases de `Markdown`.
 
@@ -124,9 +128,9 @@ Un paragraphe dans markdown commence à un début de ligne. Une fois le paragrap
 Exemple :
 
 ```markdown
-	Ceci est un début de paragraphe bla bla bla bla bla ...
+Ceci est un début de paragraphe bla bla bla bla bla ...
 	
-	Ceci est le paragraphe suivant bla bla bla bla bla ...
+Ceci est le paragraphe suivant bla bla bla bla bla ...
 ```
 
 donnera :
@@ -194,12 +198,11 @@ Chaque item de la liste est donc à préfixer d'un caractère suivi d'un espace.
 Une liste non numérotée commence par les caractères `*` ou `-`. Ainsi on aura :
 
 ```markdown
-	Ceci est une fin de paragraphe
-	
-	* item 1
-	* item suivant
-	* encore un item
+Ceci est une fin de paragraphe
 
+* item 1
+* item suivant
+* encore un item
 ```
 
 Donnant ensuite :
@@ -215,28 +218,38 @@ Ceci est une fin de paragraphe
 Pour les listes numérotées il suffit d'utiliser les chiffres arabes suivis d'un point et d'un espace. L'exemple suivant illustre ceci :
 
 ```markdown
-	ceci est la fin du paragraphe
-	
-	1. voici le 1er item
-	2. et voici le seconde
-	3. sans oublier le 3e.
+ceci est la fin du paragraphe
+
+1. voici le 1er item
+2. et voici le seconde
+3. sans oublier le 3e.
 ```
+
+Ce qui donnera le rendu suivant :
+
+ceci est la fin du paragraphe
+
+1. voici le 1er item
+2. et voici le seconde
+3. sans oublier le 3e.
 
 ### Les liste de cases à cocher.
 
 Une liste à cocher contient des cases qui sont générées par le code `- [ ] `, certaines implémentations fonctionnent d'ailleurs plutôt avec `-[ ] `, chacun s'adaptera en fonction de l'outil et de ses exigences. Ainsi :
 
 ```markdown
-	- [ ] case à cocher 1
-	- [ ] case suivante
-	- [X] ici la case est déjà cochée
+- [ ] case à cocher 1
+- [ ] case suivante
+- [X] ici la case est déjà cochée
 ```
 
-donnera :
+donnera le visuel suivant :
 
 - [ ] case à cocher 1
 - [ ] case suivante
 - [X] ici la case est déjà cochée
+
+Vous me demanderez peut-être pourquoi cette dernière case cochée (je le vois dans votre regard sur l'écran) ? Tout simplement car il existe des programmes ou des applications qui permettent de créer des listes dynamiques (tâches, courses, ...) s'appuyant sur `Markdown` permettant dans un mode de visualisation de cocher ou décocher les cases.
 
 ### L'imbrication de listes
 
@@ -299,9 +312,35 @@ Donne (le lien ci-dessous est actif, cliquable et peut-être même coloré) un l
 
 [Markdown sur Wikipedia](https://fr.wikipedia.org/wiki/Markdown "Page wikipedia consacrée à Markdown")
 
+Parfois cependant, vous souhaiterez utiliser un lien directement cliquable et visible, vous comprenez facilement qu'écrire quelque chose comme :
+
+	[https://le-site-web](https://le-site-web "https://le-site-web")
+
+est fastidieux, heureusement il existe une syntaxe simplifiée de lien pour cette situation-là :
+
+	<https://le-site-web>
+
+Voici un exemple simple pour le site de la NASA, le code source sera :
+
+	<https://www.nasa.gov/>
+
+Et voici son rendu : <https://www.nasa.gov/>
+
 **Notez que** le programme de visualisation du document, qu'il soit en rendu HTML ou que vous l'ayez converti en autre chose (docx, odt, pdf) ouvrira *votre navigateur par défaut*, soyez donc prudent si ce dernier n'est pas à jour.
 
 **Notez aussi que** les liens ne sont pas forcément visibles par défaut, ce document (pdf) n'affiche pas les liens par défaut si on ne lui passe pas des paramètres particuliers et des fichiers annexe, voir le chapitre consacré aux réglages et options avancées.
+
+### Les liens vers des titres de paragraphes.
+
+Il est possible d'ajouter des liens associés à des paragraphes, la syntaxe est alors simple : autant de dièses que nécessaires pour le niveau hiérarchique suivi du titre du paragraphe et entre accollades sont identifiant de lien. Voici un exemple :
+
+	### titre de mon paragraphe test {id-test}
+
+Plus loin dans le texte, pour faire référence à ce paragraphe, il suffit d'utiliser un lien pointant vers lui :
+
+	voir le [paragraphe test](#id-test)
+
+*Anecdote* : lors de la compilation de ce document, ces balises sont crées afin de créer une table des matières.
 
 ### Les images.
 
@@ -449,24 +488,45 @@ code 2
 ligne de code 3
 ```
 
-"langage" n'est pas du tout obligatoire, mais permet si l'éditeur est très convivial, de colorer les commandes d'après la syntaxe correspondante au langage précisé. Par exemple pour du python :
+``langage'' n'est pas du tout obligatoire, mais permet si l'éditeur est très convivial, de colorer les commandes d'après la syntaxe correspondante au langage précisé. Par exemple pour du python, voici le code source :
+
+	```python
+	
+	import numpy as np
+	index=0
+	print("Hello world !")
+	while index<=10:
+		print("L'indice actuel est : ",index)
+		index+=1
+	print("merci")
+		
+	```
+
+et voici son rendu :
 
 ```python
 
-import numpy as np
-
-print("Hello world !")
-print("merci")
+	import numpy as np
+	index=0
+	print("Hello world !")
+	while index<=10:
+		print("L'indice actuel est : ",index)
+		index+=1
+	print("merci")
 	
 ```
 
+Comme vous le constatez, le rendu contient des parties colorées
+
 # Aller plus loin avec `Markdown`
 
-Rappel : markdown n'est qu'une version simplifiée du HTML, il est donc capable de gérer les balises html classiques.
+**Rappel** : `Markdown` n'est qu'une version simplifiée du *HTML*, il est donc capable de gérer les balises html classiques. Pour aller plus loin avec `Markdown` il faut toujours garder à l'esprit la finalité, en effet les extensions complétant ce langage dépendent de l'objectif final et du support.
+
+Par exemple, le rendu de ce docuument sur une des plateformes participatives utilisant *git*[^git], telles que *gitea*, *github* ou *gitlab*, n'aura pas le même rendu et n'offrira pas les mêmes possibilités d'extension que la génération de ce document en *PDF*.
 
 ## L'insertion de caractères étendus
 
-...
+Par défaut, `Markdown` se veut une version simplifiée du langage HTML utilisé dans les pages web, aussi accepte-t-il facilement les caractères étendus ...
 
 ## Les notes de bas de page
 
@@ -614,8 +674,16 @@ Certaines captures d'écran montrent l'aperçu du code dans un éditeur dédié 
 
 Tous ces logiciels sont l'une des licences vertueuses et libre, ils sont légalement gratuits (même si la licence libre n'implique pas la gratuité).
 
-[^wysiwyg]: WYSIWYG : What You See Is What You Get
+[^application]: Dans la terminologie moderne où les *intelliphones* règnent en maîtres absolus dans une grand partie de la population, il n'y a plus vraiment de distinction entre la terminologie de programme, sous-entendu exécutable binaire, et application qui correspond à l'application d'un concept théorique sur une utilisation pratique.
 
-[^wyciwym]: WYCIWYM : What You Code Is What You Mean
+[^compilateur]: Un compilateur est un exécutable (programme, application) dont le rôle est de traduire un code source humainement compréhensible en exécutable compréhensible par la machine. L'application contraire existe mais la décompilation d'un exécutable protégé par licence logicielle est le plus souvent interdite.
+
+[^wysiwyg]: WYSIWYG : What You See Is What You Get (Ce que vous voyez est ce que vous aurez) ... *ou presque*. La majorité des logiciels de traitement de texte sont actuellement WYSIWYG, au fur et à mesure que vous saisissez votre document, il s'affiche à l'écran avec l'aspect qu'il devrait normalement avoir.
+
+[^wyciwym]: WYCIWYM : What You Code Is What You Mean (Ce que vous voyez est le sens que vous lui donnez). Dans ce mode de fonctionnement, vous vous déchargez l'esprit de la présentation obtenue en vous concentrant sur le sens de ce qui est écrit, vous définissez vos sections, vos emphases, vos listes, vos tableaux ou autres graphiques plus ou moins complexes, et lors de la compilation du code source en document final, c'est le compilateur qui, en fonction des sens donnés et des paramètres de formatage définis dans les entêtes, se chargera de traduire au mieux votre pensée dans un document graphiquement homogène et agréable à parcourrir.
+
+[^editor]: Un éditeur de textes est un programme qui écrit du texte simple, sans formatage. Son but est de manipuler du texte dit brut, en effectuant des recherches, des remplacement ou de l'édition. Sa caractéristique évoluant avec les usages récents, il peut cependant aussi montrer un formatage visuel pour aider l'utilisateur, formatage qui ne se traduit pas sur le document produit. Normalement son but est d'être léger en mémoire même si l'un des plus en vogue chez les programmeurs, *neovim* est très ... vorace en ressources.
 
 [^html]: HTML pour HyperText Markup Language ou langage de balisage hypertextuel, utilisé pour générer des textes transformables en liens hypertexte. C'est ce simple outil qui a permis le développement du web moderne en liant les pages les unes aux autres.
+
+[^git]: git (avec un g dur) est un système de gestion de versions de fichiers, décentralisé et très utilisé dans les milieux informatiques pour du développement en commun. <https://fr.wikipedia.org/wiki/Git>. D'après le magazine PC-World qui avait interviewé son concepteur, *git* qui est l'équivalent anglais de *connard* a été utilisé car l'auteur se considère un peu comme un sale égoïste et un connard.
