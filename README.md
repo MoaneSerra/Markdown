@@ -1,4 +1,3 @@
-# Dépôt de collaboration à l'élaboration d'une documentation pour Markdown
+# Markdown
 
-
-(pas de copyright) Moane - septembre 2021
+Présentation pour Alternatives87 concernant le " langage " Markdown et les éditeurs disponibles pour éditer du markdown.

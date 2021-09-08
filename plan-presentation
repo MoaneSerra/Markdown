@@ -1,0 +1,30 @@
+PLAN DE LA PRÉSENTATION SUR LE MARKDOWN ET LES ÉDITEURS
+=======================================================
+
+0. Objectifs du langage de formatage Markdown
+
+Le langage de balisage léger Markdown est un langage de formatage de texte à base de balises simples permettant une édition de documents enrichis
+
+1. Histoire du markdown
+
+2007 / John Gruber et Aaron Swartz création du langage markdown pour générer du html simplement dans l'objectif de messages (emails) en texte enrichi.
+
+Gros succès, des variantes se développent dont Multimarkdown (Fletcher T. Penney), Github, discord, RestructuredText, ...
+
+2. Tags usuels
+
+2.1. Gras, italique ...
+2.2. Les niveaux de titres
+2.3. Liens hypertextes
+2.4. Images
+2.5. Listes
+2.6. 
+
+3. Les différents éditeurs de Markdown
+
+3.1. emacs,vim,geany etc...
+3.2. ReText
+3.3. Remarkable
+3.4. Typora
+3.5. Ghostwriter
+
